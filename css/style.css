@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+  font-size: 400;
+  overflow-x: hidden !important;
+  overflow-y: hidden;
+}
+
+html {
+  scroll-behavior: "smooth";
+}
+
+.regular-z-index {
+  z-index: 22222222;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+/* ------------------------------- loading div ------------------------------ */
+#loding {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  background-color: black;
+  z-index: 99999999999999999999999999999999999999999999999999;
+  flex-wrap: wrap;
+}
+
+.spinner {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+
+  -webkit-animation: sk-rotate 2.0s infinite linear;
+  animation: sk-rotate 2.0s infinite linear;
+}
+
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  border-radius: 100%;
+
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-rotate {
+  100% {
+    -webkit-transform: rotate(360deg)
+  }
+}
+
+@keyframes sk-rotate {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg)
+  }
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% {
+    -webkit-transform: scale(0.0)
+  }
+
+  50% {
+    -webkit-transform: scale(1.0)
+  }
+}
+
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  }
+
+  50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+
+
+
+
+
+/* ------------------------------- dark theme ------------------------------- */
+.dark {
+  background-color: rgb(0, 0, 0);
+  color: #e6e6e6;
+}
+
+/* ------------------------------- logo prifix ------------------------------ */
+.logo {
+  max-width: 50px;
+  border-radius: 50%;
+  border: red solid 2px;
+
+}
+
+/* ----------------------------- header section ----------------------------- */
+.heder-bg-img {
+  background-image: url(../imgs/headerVideo/anastase-maragos-9dzWZQWZMdE-unsplash.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+
+/* -------------------------- scrool to top button -------------------------- */
+.scrollToTopBtn {
+  position: fixed;
+  bottom: 200px;
+  right: 0;
+  z-index: 10647540;
+  display: none;
+  cursor: pointer;
+}
+
+
+.ml12 {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+.ml7 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.7em;
+}
+
+.ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml7 .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+body {
+  font-size: 1.2em;
+  /* font-family: 'Lato'; */
+  font-family: 'Josefin Sans', sans-serif;
+
+  font-weight: 300;
+  text-align: center;
+}
+
+.box {
+  width: 40%;
+  height: 200px;
+  background: orange;
+  border-radius: 2px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+
+.ml11 {
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 {
+  top: 0;
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+
+.section-img {
+  background-image: url(../imgs/heder-2/pexels-victor-freitas-949130.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100vw;
+  padding: 5px;
+}
+
+.imgLogoWidth {
+  width: 50px;
+}
+
+.skin {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.sec-icon2 {
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  /* background-color: rgb(85, 101, 192); */
+  border: 9px solid rgb(73, 13, 13);
+  border-radius: 50%;
+}
+
+.for-custom-width {
+  width: 89%;
+}
+
+.nav-pills .nav-link.active {
+  background-color: rgb(73, 13, 13) !important;
+  color: white !important;
+}
+
+.nav-link {
+  color: rgb(130, 11, 11) !important;
+}
+
+#loader {
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 12px solid #444444;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+  position: relative;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
